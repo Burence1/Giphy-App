@@ -1,0 +1,10 @@
+<h1 style="margin-top: 2em; text-align: center;">Trending Gifs</h1>
+<div class="container" id="gifs">
+    <div *ngFor="let giphie of giphies; index as i">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <a href="giphie.url" target="_blank"> <img src="{{giphie.images.preview_webp.url}}" alt="" width="100%"></a>
+        </div>
+      </div>
+    </div>
+</div>
